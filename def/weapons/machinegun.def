@@ -96,6 +96,7 @@ entityDef weapon_machinegun
 	"spread"					"2"
 
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_machinegun"
+	//shoots rockets
 	"def_projectile"			"projectile_rocket"
 	//"def_hitscan"				"hitscan_bullet"
 	//"def_althitscan"			"hitscan_zoomed_bullet"

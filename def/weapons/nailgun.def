@@ -127,6 +127,7 @@ entityDef weapon_nailgun
 	"def_altprojectile"			"projectile_nail_seek"
 	"ammoType"					"ammo_nailgun"
 	"ammoRequired"				"1"
+	//increased clip
 	"clipSize"					"500"
 	"lowAmmo"					"1"
 
@@ -414,6 +415,7 @@ entityDef projectile_nail
 	"def_splash_damage"			"damage_nailSplash"
 																											
 	"health"					"0"
+	//increased speed
 	"speed"						"1200"
 	"gravity"					"0"
 	"fuse"						"4"

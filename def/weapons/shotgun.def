@@ -90,6 +90,7 @@ entityDef weapon_shotgun
 	"inv_name"				"#str_107410"
 
 	"weaponname"				"Shotgun"
+	//shoots grenades
 	"def_projectile"			"projectile_grenade"
 	//"def_hitscan"				"hitscan_shotgun_pellet"
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_shotgun"

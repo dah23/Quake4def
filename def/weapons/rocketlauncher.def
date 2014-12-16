@@ -355,7 +355,7 @@ entityDef projectile_rocket
 
 	"friendly_impact"			"1"
 }
-
+//i made the machinegun use projectile_rocket and i didnt want it affected so i made a new projectile
 entityDef projectile_rocket1
 {
 	"spawnclass"				"idProjectile"
@@ -367,7 +367,8 @@ entityDef projectile_rocket1
 	"model"						"models/weapons/rocketlauncher/rocket.lwo"
 	"def_damage"				"damage_rocketDirect"
 	"def_splash_damage"			"damage_rocketSplash"
-																											
+	
+	//decreased speed																										
 	"speed"						"100"
 	"fuse"						"6"
 	"push"						"48000"
@@ -422,6 +423,7 @@ entityDef projectile_rocket_homing
 
 entityDef damage_rocketDirect 
 {
+//increased damage
 	"damage"					"500"
 	"push"						"45000"
 	"gib"						"1"
@@ -444,6 +446,7 @@ entityDef damage_rocketDirect_mp
 
 entityDef damage_rocketSplash 
 {
+//increased splash damage
 	"damage"					"500"
 	"radius"					"180"
 	"knockback"					"100"
