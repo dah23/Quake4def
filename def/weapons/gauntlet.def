@@ -80,8 +80,6 @@ entityDef weapon_gauntlet
 	"inv_weapon"				"weapon_gauntlet"
 	"inv_item"					"5"
 	"inv_icon"					"gfx/guis/hud/icons/item_gauntlet_colored"
-	"mtr_simple_icon"					"simpleicons/item_gauntlet_colored"
-	"simple_icon_scale"			"32.0"
 	"inv_name"					"#str_107402"
 
 	"clipSize"					"0"
@@ -94,7 +92,7 @@ entityDef weapon_gauntlet
 	"weaponOffsetTime"			"600"
 	"weaponOffsetScale"			"0.003"
 
-	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_gauntlet"
+	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_shotgun"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_gauntlet"
 
 	"foreshorten"				".65"
@@ -140,7 +138,9 @@ entityDef weapon_gauntlet
 	"fx_impact"					"effects/weapons/gauntlet/impact.fx"
 	"fx_impact_flesh"			"effects/weapons/gauntlet/impact_flesh.fx"
 	"fx_impact_monstermetal"	"effects/weapons/gauntlet/impact_monstermetal.fx"
+	//"range"						"32"
 	"range"						"48"
+	//"fireRate"					".075"
 	"fireRate"					".4"
 
 	"has_windup"				"1"
@@ -156,7 +156,6 @@ entityDef weapon_gauntlet_mp
 	"muzzle_kick_offset"		"0 0 0"
 	"recoilTime"			"0"
 	"recoilAngles"			"0 0 0"
-	"range"						"50"
 }
 
 //--------------------------------------------------------------------------------------------------------------------

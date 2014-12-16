@@ -152,7 +152,6 @@ entityDef weapon_hyperblaster_mp
 	"editor_ignore"				"1"
 	"inv_icon"				"gfx/guis/hud/icons/item_hyperblaster_colored"
 	"mtr_simple_icon"				"simpleicons/item_hyperblaster_colored"
-	"simple_icon_scale"			"32.0"
 	"triggerSize"				"32"
 	
 	"muzzle_kick_time"			"0"
@@ -167,8 +166,6 @@ entityDef weapon_hyperblaster_mp
 
 	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
 	"snd_noAcquire"			"pickup_weaponstay"
-
-	"fireRate"					".07"
 }
 
 entityDef moveable_item_hyperblaster
@@ -312,9 +309,6 @@ entityDef projectile_hyperblaster
 	"clipmask_largeshot"		"0"
 	"def_damage"				"damage_hyperblaster"
 	
-	"speed"						"1800"
-	"orient_towards_motion"		"1"
-
 	"fx_impact"			"effects/weapons/hyperblaster/impact_default.fx"
 	"fx_fly"			"effects/weapons/hyperblaster/fly.fx"
 	"fx_impact_concrete"		"effects/weapons/hyperblaster/impact_concrete.fx"
@@ -340,8 +334,6 @@ entityDef projectile_hyperblaster_mp
 {
 	"inherit"					"projectile_hyperblaster"
 	"def_splash_damage"			"damage_hyperblaster_splash"	
-	"speed"						"1950"
-	"no_impact_prediction"		"1"
 }
 
 entityDef projectile_hyperblaster_bounce1

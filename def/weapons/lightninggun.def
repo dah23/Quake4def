@@ -173,12 +173,9 @@ entityDef weapon_lightninggun_mp
 {
 	"inherit"				"weapon_lightninggun"
 	"inv_icon"				"gfx/guis/hud/icons/item_lightning_colored"
-	"mtr_simple_icon"				"simpleicons/item_lightning_colored"
-	"simple_icon_scale"			"32.0"
 	"triggerSize"				"32"
 
-	"range"					"736"	// q3a value is 768
-	"fireRate"				"0.04"
+	"range"					"768"
 	"fx_trail_noimpact"			"effects/weapons/lightninggun/trail_noimpact.fx"	
 	
 	"muzzle_kick_time"			"0"
@@ -190,10 +187,6 @@ entityDef weapon_lightninggun_mp
 	
 	"respawn_Team DM"			"30"
 	"respawn_Tourney"			"15"
-	
-	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
-	"snd_noAcquire"				"pickup_weaponstay"	
-	"snd_idle_hum"				"weapon_lightninggun_hum"	
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -279,10 +272,9 @@ entityDef hitscan_lightninggun
 entityDef hitscan_lightninggun_mp
 {
 	"inherit"					"hitscan_lightninggun"
-	"range"						"736"  // q3a value is 768
+	"range"						"768"  // q3a value
 	"def_damage"				"damage_lightninggun_mp"
-	"inv_icon"					"gfx/guis/hud/icons/item_lightning_colored"
-	"mtr_simple_icon"				"simpleicons/item_lightning_colored"
+	"inv_icon"					"gfx/guis/hud/icons/item_lightninggun_colored.tga"
 }
 
 
@@ -315,8 +307,8 @@ entityDef damage_lightninggun
 entityDef damage_lightninggun_mp
 {
 	"inherit"					"damage_lightninggun"
-	"damage"					"7"
-	"knockback"					"11"
+	"damage"					"8"
+	"knockback"					"8"
 }
 
 

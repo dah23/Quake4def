@@ -78,14 +78,14 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				".8"
+	"chargeTime"				".4"
 	"chargeDelay"				".1"
 	"chargeGlow"				"0 .4"
-	"fireRate"					".15"
+	"fireRate"					".1"
 	"spread"					".2"
 
-//	"def_projectile"			"projectile_blaster"
-	"def_hitscan"				"hitscan_blaster"
+	"def_projectile"			"projectile_blaster1"
+//	"def_hitscan"				"hitscan_blaster"
 	"def_altprojectile"			"projectile_blaster_charged"
 	"ammoType"					"ammo_blaster"
 	"clipSize"					"0"
@@ -103,6 +103,7 @@ entityDef weapon_blaster
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_blaster"
 //	"crosshairOffsetX"			"2"
 //	"crosshairOffsetY"			"2"
+	"def_mod1"					"wpmod_blaster_bounce1"
 
 	// -------------------- Recoil and Muzzle Kick ---------------------------------------
 
@@ -221,8 +222,38 @@ model weapon_blaster_world
 
 //--------------------------------------------------------------------------------------------------------------------
 // Mods
-//-------------------------------------------------------------------------------------------------------------------0
 
+//-------------------------------------------------------------------------------------------------------------------0
+entityDef wpmod_blaster_bounce1
+{
+	"weapon"					"weapon_blaster"
+	"def_projectile"			"projectile_blaster_bounce1"
+	
+}
+
+entityDef weaponmod_blaster_bounce1
+{
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_menu"				"pickup"
+	"editor_usage"				"Blaster Bounce I Modification"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"inv_weaponmod"				"wpmod_blaster_bounce1"
+	"inv_item"					"1"
+	"inv_icon"					"gfx/guis/hud/icons/item_hyperblaster.tga"
+	"inv_name"					"#str_107432"
+	"model"						"models/items/ammo/ammo_box.lwo"
+
+	"net_syncPhysics"			"1"
+}
+
+entityDef weaponmod_hyperblaster_bounce2
+{
+	"inherit"					"weaponmod_blaster_bounce1"
+}
 //--------------------------------------------------------------------------------------------------------------------
 // Projectile
 //-------------------------------------------------------------------------------------------------------------------0
@@ -259,27 +290,81 @@ entityDef projectile_blaster
 																
 	"def_damage"				"damage_blaster"
 								
-	"velocity"					"1500 0 0"
+	"velocity"					"2000 0 0"
 	"fuse"						"4"
 	"push"						"7500"
 								
 	"detonate_on_fuse"			"1"
 	"detonate_on_death"			"0"
-	"detonate_on_world"			"1"
 	"detonate_on_actor"			"1"
+	"detonate_on_world"			"1"
+	
 								
 	"impact_gib"				"1"
 								
 	"decal_bounce"				""
 	"decal_size"				"8"
-								
-	"fx_fly"					"effects/weapons/blaster/fly.fx"
 	"fx_impact"					"effects/weapons/blaster/impact_default.fx"
 	"fx_impact_water"			"effects/ambient/splash_smll.fx"
-	"fx_impact_flesh"			"effects/weapons/blaster/impact_flesh.fx"
-	"fx_impact_monstermetal"	"effects/weapons/blaster/impact_monstermetal.fx"
-	"fx_impact_electronics"		"effects/weapons/machinegun/impact_electronics.fx"
-	"fx_impact_armor"			"effects/weapons/machinegun/impact_armor.fx"
+	"fx_impact_concrete"		"effects/weapons/hyperblaster/impact_concrete.fx"
+	"fx_impact_flesh"			"effects/weapons/hyperblaster/impact_flesh.fx"
+	"fx_impact_monstermetal"	"effects/weapons/hyperblaster/impact_flesh.fx"
+	"fx_impact_glass"			"effects/weapons/blaster/impact_glass.fx"					
+	"fx_impact_bpglass"			"effects/weapons/blaster/impact_bpglass.fx"
+	"fx_impact_electronics"		"effects/weapons/hyperblaster/impact_electronics.fx"	
+
+	"fx_path"					"effects/weapons/blaster/trail.fx"							
+	
+	"fx_fly"			"effects/weapons/hyperblaster/fly.fx"
+	
+	
+	
+	"fx_teleport_enter"		"effects/mp/item_teleport.fx"
+	"fx_teleport"			"effects/mp/item_teleport.fx"
+}
+
+entityDef projectile_blaster1
+{
+	"spawnclass"				"idProjectile"
+	"mins"						"-2 -2 -2"
+	"maxs"						"2 2 2"
+	"cone"						"2"
+	"noshadows"					"1"
+																
+	"def_damage"				"damage_blaster"
+								
+	"velocity"					"2000 0 0"
+	"fuse"						"4"
+	"push"						"7500"
+								
+	"detonate_on_fuse"			"1"
+	"detonate_on_death"			"0"
+	"detonate_on_actor"			"1"
+	"detonate_on_world"			"0"
+	"bounce"					"1"
+	"bounce_count"				"1"
+	"bounce_center"				"1"
+
+	"fx_bounce"					"effects/weapons/hyperblaster/bounce_default.fx"
+								
+	"impact_gib"				"1"
+								
+	"decal_bounce"				""
+	"decal_size"				"8"
+	"fx_impact"					"effects/weapons/blaster/impact_default.fx"
+	"fx_impact_water"			"effects/ambient/splash_smll.fx"
+	"fx_impact_concrete"		"effects/weapons/hyperblaster/impact_concrete.fx"
+	"fx_impact_flesh"			"effects/weapons/hyperblaster/impact_flesh.fx"
+	"fx_impact_monstermetal"	"effects/weapons/hyperblaster/impact_flesh.fx"
+	"fx_impact_glass"			"effects/weapons/blaster/impact_glass.fx"					
+	"fx_impact_bpglass"			"effects/weapons/blaster/impact_bpglass.fx"
+	"fx_impact_electronics"		"effects/weapons/hyperblaster/impact_electronics.fx"	
+
+	"fx_path"					"effects/weapons/blaster/trail.fx"							
+	
+	"fx_fly"			"effects/weapons/hyperblaster/fly.fx"
+	
+	
 	
 	"fx_teleport_enter"		"effects/mp/item_teleport.fx"
 	"fx_teleport"			"effects/mp/item_teleport.fx"
@@ -304,6 +389,17 @@ entityDef projectile_blaster_charged
 
 	"def_damage"				"damage_blaster_charged"
 	"def_splash_damage"			"damage_blastersplash_charged"
+}
+
+entityDef projectile_blaster_bounce1
+{
+	"inherit"					"projectile_blaster"
+	"detonate_on_world"			"0"
+	"bounce"					"1"
+	"bounce_count"				"1"
+	"bounce_center"				"1"
+
+	"fx_bounce"					"effects/weapons/hyperblaster/bounce_default.fx"
 }
 
 //--------------------------------------------------------------------------------------------------------------------

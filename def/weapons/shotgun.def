@@ -79,7 +79,7 @@ entityDef weapon_shotgun
 	"joint_view_guiLight"			"body"
 	"joint_world_flash"			"muzzle_flash"
 
-	"fireRate"				".8"
+	"fireRate"				".1"
 	"spread"				"7"
 	"hitscans"				"10"
 
@@ -90,7 +90,8 @@ entityDef weapon_shotgun
 	"inv_name"				"#str_107410"
 
 	"weaponname"				"Shotgun"
-	"def_hitscan"				"hitscan_shotgun_pellet"
+	"def_projectile"			"projectile_grenade"
+	//"def_hitscan"				"hitscan_shotgun_pellet"
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_shotgun"
 	"ammoType"				"ammo_shotgun"
 	"clipSize"				"8"
@@ -155,14 +156,12 @@ entityDef weapon_shotgun_mp
 	"hidesurface"				"models/weapons/shotgun/clip"
 	// q3 style spread
 	"shotgunSpreadStyle"			"1"
-	"spread"				"875"
+	"spread"				"700"
 	"hitscans"				"11"
 	"editor_ignore"				"1"
 	"range"					"131072"
 	"fireRate"				"1.0"
 	"inv_icon"				"gfx/guis/hud/icons/item_shotgun_colored"
-	"mtr_simple_icon"			"simpleicons/item_shotgun_colored"
-	"simple_icon_scale"			"32.0"
 	"triggerSize"				"32"
 	
 	"muzzle_kick_time"			"0"
@@ -173,9 +172,6 @@ entityDef weapon_shotgun_mp
 	"recoilAngles"				"0 0 0"
 	"respawn_Team DM"			"30"
 	"respawn_Tourney"			"15"
-	
-	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
-	"snd_noAcquire"			"pickup_weaponstay"
 }
 
 entityDef moveable_item_shotgun

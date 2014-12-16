@@ -722,6 +722,8 @@ entityDef player_marine
 
 	// stats
 	"health"						"100"
+	"experience"                    "0"
+	"plevel"                         "1"
 	"maxhealth"						"100"
 	"armor"							"0"
 	"maxarmor"						"100"
