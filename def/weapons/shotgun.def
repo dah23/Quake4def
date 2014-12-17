@@ -4,6 +4,9 @@
 // Copyright 2002-2004 Raven Software
 //----------------------------------------------------------------
 
+//reviewed by Georgina Matias gam8@njit.edu: shotgun shoots grenades instead of bullets, pretty cool. next time try increasing radius more for better spread
+//response: Thats actually a better idea. I thought the spread was enough though because when they hit the ground they end up spreading out on their own.
+
 export shotgun
 {
 	options -prefix SHOTGUN_ -keep lft_pnky_3 -scale .4 -keep flash eject -parent lft_wrst body

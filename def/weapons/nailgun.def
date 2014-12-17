@@ -4,6 +4,8 @@
 // Copyright 2002-2004 Raven Software
 //----------------------------------------------------------------
 
+//reviewed by Georgina Matias gam8@njit.edu: faster nail gun, clip size increased, good code
+
 export nailgun
 {
 	options -prefix NAILGUN_ -scale .4  -parent lft_wrst nailgun_body -keep lft_shldr lft_elbo lft_wrst lft_thmb_1 lft_ndx_1 lft_mddl_1 lft_ring_5 lft_pnky_1 lft_thmb_2 lft_ndx_2 lft_mddl_2 lft_ring_2 lft_pnky_2 lft_thmb_3 lft_ndx_3 lft_mddl_3 lft_ring_3 lft_pnky_3 lft_thmb_4 lft_ndx_4 lft_mddl_4 lft_ring_4 lft_pnky_4 rt_elbo rt_wrst rt_ring_1 rt_ndx_1 rt_thmb_1 rt_ring_2 rt_ndx_2 rt_thmb_2 rt_ring_3 rt_ndx_3 rt_thmb_3 rt_ring_4 rt_ndx_4 rt_thmb_4 nailgun_rt_steam_nozzle nailgun_lft_steam_nozzle

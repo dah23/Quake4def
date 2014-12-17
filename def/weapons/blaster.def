@@ -4,6 +4,9 @@
 // Copyright 2002-2004 Raven Software
 //----------------------------------------------------------------
 
+//reviewed by Georgina Matias gam8@njit.edu: working projectile blaster, good code. try some effects next time
+//response: I took the bounce mod code in the hyperblaster def file and transfered it here. i thought that was cool enough 
+
 export blaster
 {
 	options -prefix BLASTER_ -scale .4 -keep lft_pnky_3 barrel -keep flashlight -parent lft_wrst body -sourcedir work/models/weapons/marine_blaster_pistol/animations -destdir models/weapons/blaster

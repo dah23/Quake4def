@@ -4,6 +4,8 @@
 // Copyright 2002-2004 Raven Software
 //----------------------------------------------------------------
 
+//reviewed by Georgina Matias gam8@njit.edu: added powerful new projectile, cool. try adding effects or clustering for more fun
+//response: It is kind of dull but I couldn't think of much to add that was amazing. Theres already a homing function that I could of used but its already in the game.
 export rocketlauncher
 {
 	options -prefix SRL_ -scale .4 -keep muzzle_flash l_vent r_vent -sourcedir work/models/weapons/strogg_rocket_launcher/animations -destdir models/weapons/rocketlauncher

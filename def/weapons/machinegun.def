@@ -4,6 +4,8 @@
 // Copyright 2002-2004 Raven Software
 //----------------------------------------------------------------
 
+//reviewed by Georgina Matias gam8@njit.edu: added shooting rockets, good code
+
 export machinegun
 {
 	options -prefix MACHINE_GUN_ -scale .4 -keep barrel_1 barrel_2 eject flashlight
